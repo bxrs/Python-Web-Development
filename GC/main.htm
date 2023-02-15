@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+	
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="parallax.css">
+    <link rel="icon" href="PFP2ico.ico">
+<title>Giraffe Circle</title>
+
+</head>
+<body>
+	<div class="mouse_move">  
+
+	<img
+		id="img"
+		src="T.png"
+		class="mouse"
+		value="7"/>
+    <img
+        id="img2"
+        src="H.png"
+        class="mouse"
+        value="-5"/>
+    <img
+        id="img3"
+        src="E.png"
+        class="mouse"
+        value="18"/>
+    <img
+        id="img4"
+        src="G.png"
+        class="mouse"
+        value="-4"/>
+    <img
+        id="img5"
+        src="I.png"
+        class="mouse"
+        value="8"/>
+    <img
+        id="img6"
+        src="R.png"
+        class="mouse"
+        value="-1"/>
+    <img
+        id="img7"
+        src="A.png"
+        class="mouse"
+        value="9"/>
+    <img
+        id="img8"
+        src="F1.png"
+        class="mouse"
+        value="-7"/>
+    <img
+        id="img9"
+        src="F2.png"
+        class="mouse"
+        value="1"/>
+    <img
+        id="img10"
+        src="E2.png"
+        class="mouse"
+        value="-8"/>
+    <img
+        id="img11"
+        src="C.png"
+        class="mouse"
+        value="2"/>
+    <img
+        id="img12"
+        src="I2.png"
+        class="mouse"
+        value="-5"/>
+    <img
+        id="img13"
+        src="R2.png"
+        class="mouse"
+        value="10"/>
+    <img
+        id="img14"
+        src="C2.png"
+        class="mouse"
+        value="-2"/>
+    <img
+        id="img15"
+        src="L.png"
+        class="mouse"
+        value="4"/>
+    <img
+        id="img16"
+        src="E3.png"
+        class="mouse"
+        value="-6"/>
+	</div>
+
+    <div class="card"></div>
+
+	<script type="text/javascript">
+	document.addEventListener("mousemove", parallax);
+	function parallax(event) {
+		this.querySelectorAll(".mouse").forEach((shift) => {
+		const position = shift.getAttribute("value");
+		const x = (window.innerWidth - event.pageX * position) / 600;
+		const y = (window.innerHeight - event.pageY * position) / 600;
+
+		shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+		});
+	}
+	</script>
+    <a href="https://opensea.io/collection/jiraffesbymorby" target="_blank" style="text-align: center;" class="button">View On Opensea</a>
+	<ul>
+		<li><a href="#sec">Gallery</li></a>
+		<li><a href="#sec1">Items</li></a>
+		<li><a href="#sec2">About</li></a>
+	</ul>
+	<section id="sec" data-text="Gallery">
+        <P>Gallery Coming Soon...
+        </P>
+    </section>
+	<section id="sec1" data-text="Items">
+        <P>Traits such as Accessories, Colour, Hair, 
+            <br>Mouth, Eyes and Background are sorted into rarities.
+            <br>Common, Rare, Super Rare and Legendary are the four 
+            <br>levels of rarity in our NFT's that are randomly 
+            <br>generated onto our Giraffes, adjusting the value 
+            <br>and rarity of the Giraffe. Out of all our Giraffes,
+            <br> twenty five are hand-drawn and completely unique
+            <br> from the rest, be on the look-out for them.
+        </P>
+        <div class="floating"
+        <a>
+            <img = src="fourr.png" width="500" height="500">
+            
+        </a>
+        </div>
+    </section>
+	<section id="sec2" data-text="About">
+        <P>The Giraffe Circle is a collection of one 
+            <br>thousand unique and randomly generated
+            <br> NFT's that are placed on the Ethereum Blockchain.
+            <br> Giraffe Circle was created in October and will 
+            <br> launch the NFT's later in the year on Opensea. 
+            <br>A whitelist will be available before release under
+            <br>certain requirements, stay tuned to keep updated.
+            <br>The Giraffe Circle was created by a team of one person.
+            <br>Minting will not be available along with whitelisting for this
+            <br>project, all NFT's will be released on the same date
+            <br>and same time, a release date will be publicly announced
+            <br>soon, keep and eye out!
+        </P>
+        <img
+
+    </section>
+	<div
+		<i class="icon-arrow-down"></i>
+		</div>
+		<!-- Return to Top -->
+		<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+    // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(500);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+    </script>
+
+</body>
+</html>
